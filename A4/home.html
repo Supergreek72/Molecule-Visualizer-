@@ -1,0 +1,77 @@
+<html>
+
+    <html lang="en">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="script.js"/></script>
+
+    <div class="sidenav">
+        <ul class="sidenavli">
+            <li class="sidenavli"> <a href="https://www.molinstincts.com/sdf-mol-file/"  target="_blank">Find SDF Files</a></li>
+            <li class="sidenavli"> <a href="https://www.schoolmykids.com/learn/periodic-table/color-of-all-the-elements"  target="_blank">Find Elements</a></li>
+            <li class="sidenavli" onclick="resetDatabase()"><a>Reset DataBase</a></li>
+        </ul>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="elements.html">Elements</a></li>
+          </ul>
+    </nav>
+
+    
+
+    <body>
+
+        <ul class="horizontal-list">
+            <li>
+                <label for="moleculeSelect">Select a Molecule:</label>
+                <select id="moleculeSelect" name="moleculeSelect"></select>
+                <p>
+                    <label for="atomNum">Number of Atoms:</label>
+                    <label id="atomNum"></label>
+                    <p>
+                        <label for="bondNum">Number of Bonds:</label>
+                        <label id="bondNum"></label>
+                    </p>
+                </p>
+                <p><button id="displayMol">Display Molecule</button></p>
+            </li>
+            <li>
+                <label for="rotateSelect">Select an axis to rotate on:</label>
+                <select id="rotateSelect" name="rotateSelect">
+                    <option value="x">x</option>
+                    <option value="y">y</option>
+                    <option value="z">z</option>
+                </select>
+                <p>
+                    <label for="degrees">Rotate by:</label>
+                    <input type="text" name="degrees" id="degrees">
+                </p>
+                <p><button id="Rotate" disabled onclick="rotateMolecule()">Rotate Molecule</button></p>
+            </li>
+        </ul>
+
+        <div id="image-container"><svg id="my-svg"></svg></div>
+        
+        
+        
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

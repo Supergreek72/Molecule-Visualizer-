@@ -1,0 +1,38 @@
+<html>
+
+    <html lang="en">
+    <title>Upload</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="script.js"/></script>
+
+
+    <div class="sidenav">
+        <ul class="sidenavli">
+            <li class="sidenavli"> <a href="https://www.molinstincts.com/sdf-mol-file/"  target="_blank">Find SDF Files</a></li>
+            <li class="sidenavli"> <a href="https://www.schoolmykids.com/learn/periodic-table/color-of-all-the-elements"  target="_blank">Find Elements</a></li>
+            <li class="sidenavli" onclick="resetDatabase()"><a>Reset DataBase</a></li>
+        </ul>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="elements.html">Elements</a></li>
+        </ul>
+    </nav>
+
+    <body>
+        
+            <label for="txtMolName">Name of Molecule:</label>
+            <input type="text" name="txtMolName" id="molName">
+            <p>
+                <input type="file" id="sdf_file" name="filename"/>
+            </p>
+            <p>
+                <button id="btnUpload">Upload</button>
+            </p>
+        
+    </body>
+</html>

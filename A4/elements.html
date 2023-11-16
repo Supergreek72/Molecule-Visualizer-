@@ -1,0 +1,80 @@
+<html>
+
+    <html lang="en">
+    <title>Elements</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="element.js"/></script>
+
+    <div class="sidenav">
+      <ul class="sidenavli">
+          <li class="sidenavli"> <a href="https://www.molinstincts.com/sdf-mol-file/"  target="_blank">Find SDF Files</a></li>
+          <li class="sidenavli"> <a href="https://www.schoolmykids.com/learn/periodic-table/color-of-all-the-elements"  target="_blank">Find Elements</a></li>
+          <li class="sidenavli" onclick="resetDatabase()"><a>Reset DataBase</a></li>
+      </ul>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="elements.html">Elements</a></li>
+        </ul>
+    </nav>
+
+    <body>
+        <table id="elementTableUpper">
+            <thead>
+              <tr>
+                <th>Element Number</th>
+                <th>Element Code</th>
+                <th>Element Name</th>
+                <th>Colour 1</th>
+                <th>Colour 2</th>
+                <th>Colour 3</th>
+                <th>Radius</th>
+              </tr>
+            </thead>
+            <tbody id="elementTable">
+            </tbody>
+          </table>
+        <label for="elementNum">Element Number:</label>
+        <input type="text" name="elementNum" id="elementNum" style="margin-top: 5px;">
+
+        <p>
+        <label for="elementCode">Element Code:</label>
+        <input type="text" name="elementCode" id="elementCode">  
+        </p>
+
+        <p>
+        <label for="elementName">Element Name:</label>
+        <input type="text" name="elementName" id="elementName">
+        </p>
+
+        <p>
+        <label for="colour1">Colour 1:</label>
+        <input type="text" name="colour1" id="colour1">
+        </p>
+
+        <p>
+        <label for="colour2">Colour 2:</label>
+        <input type="text" name="colour2" id="colour2">
+        </p>
+
+        <p>
+        <label for="colour3">Colour 3:</label>
+        <input type="text" name="colour3" id="colour3">
+        </p>
+
+        <p>
+        <label for="radius">Radius:</label>
+        <input type="text" name="radius" id="radius">
+        </p>
+        <button id="addElement">Add an Element</button>
+
+        <p><label for="elementSelect">Select a Element:</label>
+          <select id="elementSelect" name="elementSelect"></select></p>
+        
+        <p><button id="btnDelete">Delete Selected Element</button></p>
+    </body>
+</html>
